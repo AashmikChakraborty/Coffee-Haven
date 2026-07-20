@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    background:linear-gradient(135deg,#fdf6ee,#f8efe4,#f5e5d3);
+    overflow-x:hidden;
+}
+
+.success-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.success-card{
+    width:100%;
+    max-width:560px;
+    background:#fff;
+    border-radius:25px;
+    padding:45px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+    animation:popup .6s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.success-card::before{
+    content:"";
+    position:absolute;
+    top:-80px;
+    right:-80px;
+    width:180px;
+    height:180px;
+    background:rgba(198,134,66,.12);
+    border-radius:50%;
+}
+
+.success-card::after{
+    content:"";
+    position:absolute;
+    bottom:-90px;
+    left:-90px;
+    width:220px;
+    height:220px;
+    background:rgba(111,78,55,.08);
+    border-radius:50%;
+}
+
+.checkmark{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:#28a745;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    box-shadow:0 15px 35px rgba(40,167,69,.35);
+    animation:bounce 1.5s infinite alternate;
+}
+
+.success-card h1{
+    margin-top:30px;
+    color:#6F4E37;
+    font-size:34px;
+}
+
+.subtitle{
+    margin-top:15px;
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* ======================================
+        ORDER DETAILS
+====================================== */
+
+.order-details{
+    margin-top:35px;
+    padding:25px;
+    background:#faf8f5;
+    border-radius:18px;
+    border:1px solid #eee;
+    text-align:left;
+}
+
+.order-details h2{
+    color:#6F4E37;
+    font-size:22px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #e8e8e8;
+}
+
+.detail-row:last-child{
+    border-bottom:none;
+}
+
+.detail-row span{
+    color:#777;
+    font-size:16px;
+}
+
+.detail-row strong{
+    color:#333;
+    font-size:16px;
+    font-weight:600;
+}
+
+/* ======================================
+        DELIVERY CARD
+====================================== */
+
+.delivery-card{
+    margin-top:30px;
+    padding:22px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    background:linear-gradient(135deg,#fff8f1,#fef1df);
+    border-radius:18px;
+    border-left:6px solid #C68642;
+    box-shadow:0 10px 25px rgba(198,134,66,.12);
+}
+
+.delivery-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#6F4E37,#C68642);
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    flex-shrink:0;
+}
+
+.delivery-card h3{
+    color:#6F4E37;
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+.delivery-card p{
+    color:#444;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ======================================
+        ACTION BUTTONS
+====================================== */
+
+.action-buttons{
+    margin-top:35px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* ======================================
+        TRACK ORDER BUTTON
+====================================== */
+
+.track-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    padding:18px;
+    border-radius:16px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#6F4E37,#C68642);
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 15px 35px rgba(111,78,55,.30);
+    transition:.35s ease;
+}
+
+.track-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 20px 45px rgba(111,78,55,.40);
+}
+
+.track-btn i{
+    font-size:20px;
+    transition:.35s;
+}
+
+.track-btn:hover i{
+    transform:translateX(6px);
+}
+
+/* ======================================
+        SECONDARY BUTTONS
+====================================== */
+
+.secondary-btn{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:17px;
+    border-radius:16px;
+    border:2px solid #C68642;
+    background:#fff;
+    color:#6F4E37;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s ease;
+}
+
+.secondary-btn:hover{
+    background:#C68642;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+.secondary-btn i{
+    font-size:18px;
+}
+
+/* ======================================
+        ANIMATIONS
+====================================== */
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes bounce{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-10px);
+    }
+
+}
+
+/* ======================================
+        RESPONSIVE DESIGN
+====================================== */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    .success-card{
+        padding:30px 22px;
+    }
+
+    .checkmark{
+        width:90px;
+        height:90px;
+        font-size:45px;
+    }
+
+    .success-card h1{
+        font-size:28px;
+    }
+
+    .subtitle{
+        font-size:15px;
+    }
+
+    .order-details{
+        padding:18px;
+    }
+
+    .order-details h2{
+        font-size:20px;
+    }
+
+    .detail-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .delivery-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .delivery-icon{
+        width:60px;
+        height:60px;
+        font-size:24px;
+    }
+
+    .delivery-card p{
+        font-size:20px;
+    }
+
+    .track-btn,
+    .secondary-btn{
+        font-size:16px;
+        padding:15px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .success-card{
+        border-radius:20px;
+        padding:24px 18px;
+    }
+
+    .checkmark{
+        width:80px;
+        height:80px;
+        font-size:40px;
+    }
+
+    .success-card h1{
+        font-size:24px;
+    }
+
+}

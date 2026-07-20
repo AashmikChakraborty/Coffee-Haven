@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | Coffee Haven</title>
+
+    <link rel="stylesheet" href="success.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="success-container">
+
+    <div class="success-card">
+
+        <!-- Success Icon -->
+        <div class="checkmark">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <h1>Order Confirmed!</h1>
+
+        <p class="subtitle">
+            Thank you for ordering from
+            <strong>Coffee Haven</strong>.
+            <br>
+            Your coffee is now being prepared.
+        </p>
+
+        <!-- Order Details -->
+        <div class="order-details">
+
+            <h2>Order Details</h2>
+
+            <div class="detail-row">
+                <span>Order ID</span>
+                <strong id="orderId"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Total Paid</span>
+                <strong>₹<span id="orderTotal"></span></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Payment</span>
+                <strong id="paymentMethod"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Date</span>
+                <strong id="orderDate"></strong>
+            </div>
+
+        </div>
+
+        <!-- Delivery -->
+        <div class="delivery-card">
+
+            <div class="delivery-icon">
+                <i class="fa-solid fa-truck-fast"></i>
+            </div>
+
+            <div>
+
+                <h3>Estimated Delivery</h3>
+
+                <p>18 - 22 Minutes</p>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons">
+
+            <a href="tracking.html" class="track-btn">
+                <i class="fa-solid fa-location-dot"></i>
+                Track Order
+            </a>
+
+            <button id="downloadReceipt" class="secondary-btn">
+                <i class="fa-solid fa-download"></i>
+                Download Receipt
+            </button>
+
+            <a href="index.html" class="secondary-btn">
+                <i class="fa-solid fa-store"></i>
+                Continue Shopping
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="success.js"></script>
+
+</body>
+</html>

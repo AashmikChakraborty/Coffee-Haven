@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order | Coffee Haven</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<section class="tracking-page">
+
+    <div class="tracking-card">
+
+        <i class="fa-solid fa-mug-hot tracking-icon"></i>
+
+        <h1>Track Your Order</h1>
+
+        <p>Your coffee is on its way!</p>
+
+        <div class="timeline">
+
+            <div class="step active">
+                <div class="circle">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h3>Order Placed</h3>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="prepare">
+                <div class="circle">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <h3>Preparing</h3>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="delivery">
+                <div class="circle">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <h3>Out For Delivery</h3>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="done">
+                <div class="circle">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h3>Delivered</h3>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="primary-btn">
+            Back Home
+        </a>
+
+    </div>
+
+</section>
+
+<script src="tracking.js"></script>
+
+</body>
+</html>

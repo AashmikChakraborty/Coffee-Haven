@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | Coffee Haven</title>
+
+    <link rel="stylesheet" href="checkout.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="checkout-container">
+
+        <h1>☕ Coffee Haven Checkout</h1>
+
+        <div class="checkout-grid">
+
+            <!-- Customer Details -->
+
+            <div class="customer-details">
+
+                <h2>Customer Details</h2>
+
+                <form id="checkoutForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Full Name"
+                        required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Phone Number"
+                        required>
+
+                    <textarea
+                        id="address"
+                        rows="4"
+                        placeholder="Delivery Address"
+                        required></textarea>
+
+                    <h3>Payment Method</h3>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="UPI"
+                            checked>
+
+                        UPI
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Card">
+
+                        Credit / Debit Card
+
+                    </label>
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            value="Cash">
+
+                        Cash on Delivery
+
+                    </label>
+
+                    <button type="submit">
+
+                        Pay Now
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <div class="order-summary">
+
+                <h2>Your Order</h2>
+
+                <div id="orderItems">
+
+                </div>
+
+                <hr>
+
+                <h3>
+
+                    Total:
+
+                    ₹<span id="totalPrice">0</span>
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="checkout.js"></script>
+
+</body>
+
+</html>

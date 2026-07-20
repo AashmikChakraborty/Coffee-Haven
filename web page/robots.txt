@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://AashmikChakraborty.github.io/Coffee-Haven/sitemap.xml

@@ -1,0 +1,9 @@
+{
+  "name": "Coffee Haven",
+  "short_name": "Coffee",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B5E3C",
+  "icons": []
+}

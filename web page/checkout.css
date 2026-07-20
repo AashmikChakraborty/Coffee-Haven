@@ -1,0 +1,207 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+
+    background:#f5f5f5;
+
+    min-height:100vh;
+
+    padding:40px;
+
+}
+
+.checkout-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.checkout-container h1{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#8B5E3C;
+
+}
+
+.checkout-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+.customer-details,
+.order-summary{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.customer-details h2,
+.order-summary h2{
+
+    margin-bottom:20px;
+
+    color:#8B5E3C;
+
+}
+
+.customer-details input,
+.customer-details textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.customer-details textarea{
+
+    resize:none;
+
+}
+
+.customer-details h3{
+
+    margin:20px 0 15px;
+
+}
+
+.customer-details label{
+
+    display:block;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+}
+
+.customer-details button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:16px;
+
+    background:#8B5E3C;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.customer-details button:hover{
+
+    background:#6e482e;
+
+}
+
+.order-summary{
+
+    position:sticky;
+
+    top:30px;
+
+}
+
+.order-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.order-item:last-child{
+
+    border:none;
+
+}
+
+hr{
+
+    margin:20px 0;
+
+}
+
+.order-summary h3{
+
+    color:#8B5E3C;
+
+    text-align:right;
+
+}
+
+@media(max-width:900px){
+
+.checkout-grid{
+
+grid-template-columns:1fr;
+
+}
+
+body{
+
+padding:20px;
+
+}
+
+.order-summary{
+
+position:static;
+
+}
+
+}
