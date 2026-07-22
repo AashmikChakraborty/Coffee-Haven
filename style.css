@@ -1887,13 +1887,18 @@ body.dark .footer{
 
     }
 
-    .hero-image,
-    .about-image,
-    .featured-image{
+    .hero-image{
+    order:2;
+}
 
-        order:-1;
+.hero-content{
+    order:1;
+}
 
-    }
+.about-image,
+.featured-image{
+    order:-1;
+}
 
     .hero h1{
 
