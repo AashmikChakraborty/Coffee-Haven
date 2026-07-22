@@ -327,6 +327,11 @@ function renderCart(){
     });
 
     cartCount.textContent=count;
+    if (count === 0) {
+        cartCount.style.display = "none";
+    } else {
+        cartCount.style.display = "flex";
+    }
 
     cartTotal.textContent = total;
     
