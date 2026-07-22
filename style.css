@@ -1587,7 +1587,7 @@ body.dark .hero h1{
     padding:0;
     border-radius:50%;
     position:relative;
-    font-size:0;
+    color:#fff;
 }
 
 #cartBtn i{
@@ -1598,15 +1598,21 @@ body.dark .hero h1{
     position:absolute;
     top:-5px;
     right:-5px;
-    font-size:12px;
     min-width:18px;
     height:18px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     border-radius:50%;
-    background:red;
+    background:#6F4E37;
     color:#fff;
+    border:2px solid #fff;
+
+    font-size:10px;
+    font-weight:600;
+    line-height:1;
 }
 
     .hamburger{

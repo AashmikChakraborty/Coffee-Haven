@@ -65,7 +65,7 @@ Designed to resemble a real-world commercial coffee website.
 # 📱 Mobile View
 
 <p align="center">
-<img src="screenshots/mobile.png" width="300">
+<img src="screenshots/mobile.jpg" width="300">
 </p>
 
 ---
