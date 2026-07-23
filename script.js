@@ -327,10 +327,11 @@ function renderCart(){
     });
 
     cartCount.textContent=count;
-    if (count === 0) {
-        cartCount.style.display = "none";
+    if (count > 0) {
+        cartCount.textContent = count > 99 ? "99+" : count;
+        cartCount.classList.add("show");
     } else {
-        cartCount.style.display = "flex";
+        cartCount.classList.remove("show");
     }
 
     cartTotal.textContent = total;
